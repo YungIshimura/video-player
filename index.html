@@ -16,11 +16,16 @@
 
     .video {
       display: flex;
-      flex-grow: 1;
+      flex-grow: 30;
     }
 
     .buttons {
       background-color: black;
+      background: black;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-grow: 1;
     }
 
     .button {
@@ -30,12 +35,16 @@
     }
 
     .icon {
-      height: 8px;
-      width: 8px;
+      height: 15px;
+      width: 15px;
       color: white;
       font-size: 25px;
       margin: 10px;
-      text-indent: 2px;
+      text-indent: 3px;
+    }
+    
+    .empty {
+      flex-grow: 2;
     }
   </style>
 </head>
@@ -43,20 +52,24 @@
 <body>
   <div class="player" id="player">
     <div class="js-video-container video"></div>
-    <div class="buttons">
-      <button class="js-play-button button">
-        <i class="fa fa-play icon" aria-hidden="true"></i>
-      </button>
-      <button class="js-pause-button button" hidden>
-        <i class="fa fa-pause icon" aria-hidden="true"></i>
-      </button>
-      <button class="js-mute-button button">
-        <i class="fa fa-volume-off icon" aria-hidden="true"></i>
-      </button>
-      <button class="js-volume-button button" hidden>
-        <i class="fa fa-volume-up icon" aria-hidden="true"></i>
-      </button>
-    </div>
+      <div class="buttons">
+        <button class="js-play-button button">
+          <i class="fa fa-play icon" aria-hidden="true"></i>
+        </button>
+        <button class="js-pause-button button" hidden>
+          <i class="fa fa-pause icon" aria-hidden="true"></i>
+        </button>
+        <button class="js-mute-button button">
+          <i class="fa fa-volume-off icon" aria-hidden="true"></i>
+        </button>
+        <button class="js-volume-button button" hidden>
+          <i class="fa fa-volume-up icon" aria-hidden="true"></i>
+        </button>
+        <div class="empty"></div>
+        <button class="js-fullscreen-button button">
+          <i class="fa fa-arrows-alt icon" aria-hidden="true"></i>
+        </button>
+      </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
