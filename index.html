@@ -16,31 +16,26 @@
 
     .video {
       display: flex;
-      flex-grow: 14;
+      flex-grow: 1;
     }
 
     .buttons {
       background-color: black;
-      line-height: 100%;
-      font-size: 15px;
     }
 
-    .play-button,
-    .pause-button,
-    .mute-button,
-    .volume-button {
+    .button {
       border-style: None;
       cursor: pointer;
       background-color: transparent;
     }
 
-    .play-icon,
-    .pause-icon,
-    .mute-button,
-    .volume-icon {
+    .icon {
+      height: 8px;
+      width: 8px;
       color: white;
-      line-height: 2;
-      font-size: 20px;
+      font-size: 25px;
+      margin: 10px;
+      text-indent: 2px;
     }
   </style>
 </head>
@@ -49,17 +44,17 @@
   <div class="player" id="player">
     <div class="js-video-container video"></div>
     <div class="buttons">
-      <button class="js-play-button play-button">
-        <i class="fa fa-play play-icon" aria-hidden="true"></i>
+      <button class="js-play-button button">
+        <i class="fa fa-play icon" aria-hidden="true"></i>
       </button>
-      <button class="js-pause-button pause-button" hidden>
-        <i class="fa fa-pause pause-icon" aria-hidden="true"></i>
+      <button class="js-pause-button button" hidden>
+        <i class="fa fa-pause icon" aria-hidden="true"></i>
       </button>
-      <button class="js-mute-button mute-button">
-        <i class="fa fa-volume-off mute-icon" aria-hidden="true"></i>
+      <button class="js-mute-button button">
+        <i class="fa fa-volume-off icon" aria-hidden="true"></i>
       </button>
-      <button class="js-volume-button volume-button" hidden>
-        <i class="fa fa-volume-up volume-icon" aria-hidden="true"></i>
+      <button class="js-volume-button button" hidden>
+        <i class="fa fa-volume-up icon" aria-hidden="true"></i>
       </button>
     </div>
   </div>
