@@ -13,3 +13,7 @@ pip install -r requirements.txt
 python3 server.py
 ```
 Затем в браузере перейдите по адресу http://127.0.0.1:5500/. Вы увидите готовый видеоплеер.
+
+## Скриншот с сайта
+
+![Снимок экрана от 2023-01-13 19-01-15](https://user-images.githubusercontent.com/83189636/212376779-055fcf9f-a5e0-4230-b036-6a0bb2622878.png)
