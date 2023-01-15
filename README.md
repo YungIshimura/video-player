@@ -1,5 +1,5 @@
 # Видеоплеер
-Простйо видеоплеер доступный [по ссылке - https://yungishimura.github.io/video-player/. ](https://yungishimura.github.io/video-player/)
+Простой видеоплеер доступный [по ссылке - https://yungishimura.github.io/video-player/. ](https://yungishimura.github.io/video-player/)
 
 ## Как установить 
 Во-первых, вам необходимо скачать этот репозиторий. Для этого нажмите зелёную кнопку Code в правом верхнем углу и выберите удобный для вас метод скачивания.
