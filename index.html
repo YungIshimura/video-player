@@ -25,9 +25,12 @@
         <button class="js-volume-button player-button" hidden>
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
-        <div style="color: white;" class="timer-block">
+        <div class="timer-block">
           <span class="js-current-time"></span>
-          —
+          <div class="js-progress timer-block__progress-bar">
+            <div class="js-progress-slider" style="background-color: red;"></div>
+            <span class="dot"></span>
+          </div>
           <span class="js-duration"></span>
         </div>
         <button class="js-fullscreen-button player-button">

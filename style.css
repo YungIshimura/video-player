@@ -22,7 +22,7 @@
     flex-direction: row;
     align-items: center;
     padding-bottom: 5px;
-    padding-left: 2px;
+    padding-left: 4px;
 }
 
 .player-button {
@@ -36,7 +36,27 @@
 }
 
 .timer-block {
+    color: white;
     display: flex;
     justify-content: space-between;
     flex-grow: 2;
+}
+
+.timer-block__progress-bar {
+    display: flex;
+    background-color: grey;
+    height: 5px;
+    width: 510px;
+    border-radius: 12px;
+    margin-top: 7px;
+}
+
+.dot {
+    display: flex;
+    height: 8px;
+    width: 8px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-top: -3px;
 }
