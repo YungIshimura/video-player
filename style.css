@@ -35,6 +35,10 @@
     font-size: 20px;
 }
 
+.player-button:focus {
+    border-style: None;
+}
+
 .timer-block {
     color: white;
     display: flex;
