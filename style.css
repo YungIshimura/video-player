@@ -1,33 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .player {
-    width: 725px;
-    height: 550px;
-    box-shadow: 0 0 10px black;
+    width: 800px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    padding: 3px;
+    padding: 5px;
 }
 
 .video {
     display: flex;
     flex-grow: 30;
+    box-shadow: 0 0 30px black;
 }
 
 .player-buttons {
-    background-color: black;
-    background: black;
     display: flex;
+    background-color: black;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 5px;
-    padding-left: 4px;
+    padding-bottom: 3px;
+    padding-left: 1px;
 }
 
 .player-button {
     height: 35px;
-    width: 33px;
+    width: 47px;
     border-style: None;
     cursor: pointer;
     background-color: transparent;
@@ -42,23 +41,25 @@
 .timer-block {
     color: white;
     display: flex;
-    justify-content: space-between;
-    flex-grow: 2;
+    flex-grow: 3;
 }
 
 .timer-block__progress-bar {
     display: flex;
     background-color: grey;
     height: 5px;
-    width: 510px;
+    width: 550px;
     border-radius: 12px;
     margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 25px;
 }
 
 .dot {
     display: flex;
     height: 8px;
     width: 8px;
+    font-size: 19px;
     background-color: red;
     border-radius: 50%;
     border: 2px solid white;
@@ -72,4 +73,8 @@
     opacity: 1;
     transition-duration: 300ms;
     transition-timing-function: ease-in
+}
+
+.timer-block__slider {
+    background-color: red;
 }
