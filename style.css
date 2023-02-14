@@ -26,7 +26,7 @@
 
 .player-button {
     height: 35px;
-    width: 47px;
+    width: 35px;
     border-style: None;
     cursor: pointer;
     background-color: transparent;
@@ -42,17 +42,19 @@
     color: white;
     display: flex;
     flex-grow: 3;
+    font-size: 16px;
+    align-items: center;
 }
 
 .timer-block__progress-bar {
     display: flex;
     background-color: grey;
     height: 5px;
-    width: 550px;
+    flex-grow: 1;
     border-radius: 12px;
-    margin-top: 7px;
-    margin-left: 10px;
-    margin-right: 25px;
+    margin-left: 3px;
+    margin-right: 8px;
+    cursor: pointer;
 }
 
 .dot {
@@ -72,7 +74,8 @@
 .timer-block__progress-bar:hover .dot {
     opacity: 1;
     transition-duration: 300ms;
-    transition-timing-function: ease-in
+    transition-timing-function: ease-in;
+    cursor: pointer;
 }
 
 .timer-block__slider {
